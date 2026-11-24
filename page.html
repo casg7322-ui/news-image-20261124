@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Day — Tuesday 24 November 2026</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1024px; height:1024px; }
+  body {
+    font-family:'Lora','Noto Serif',serif;
+    background:#f8f4ea; color:#141210;
+    padding:7px 12px 6px 12px;
+    display:flex; flex-direction:column;
+  }
+  .sans { font-family:'Liberation Sans','DejaVu Sans',sans-serif; }
+  .red { color:#a01e1e; }
+
+  /* --- masthead --- */
+  .topmeta { display:flex; justify-content:space-between; font-size:9px; letter-spacing:1.5px; font-weight:bold; padding-bottom:3px; }
+  h1 { font-family:'Noto Serif Display','Noto Serif',serif; font-weight:900; font-size:50px; line-height:1.02; text-align:center; letter-spacing:1px; }
+  .dateline { text-align:center; font-size:14px; font-weight:bold; letter-spacing:4px; padding:2px 0; border-top:2.5px solid #141210; border-bottom:1px solid #141210; margin-top:3px; }
+  .dateline b { color:#a01e1e; }
+  .coverline { text-align:center; font-size:9px; letter-spacing:1.1px; font-weight:bold; padding:3px 0 4px 0; border-bottom:2.5px solid #141210; }
+
+  /* --- stat strip --- */
+  .stats { display:flex; border-bottom:1px solid #141210; padding:3px 0 4px 0; }
+  .stat { flex:1; text-align:center; border-right:1px solid #b9b2a2; padding:0 4px; }
+  .stat:last-child { border-right:none; }
+  .stat .n { font-size:21px; font-weight:bold; line-height:1; }
+  .stat .l { font-size:7.6px; letter-spacing:0.5px; font-weight:bold; margin-top:2px; line-height:1.25; }
+
+  /* --- timeline --- */
+  .timeline { font-size:8.5px; letter-spacing:0.2px; padding:3px 0; border-bottom:2.5px solid #141210; line-height:1.3; white-space:nowrap; }
+  .timeline b { color:#a01e1e; }
+
+  /* --- heroes --- */
+  .heroes { display:flex; gap:12px; padding:6px 0 5px 0; border-bottom:1px solid #141210; }
+  .hero { flex:1; }
+  .hero + .hero { border-left:1px solid #b9b2a2; padding-left:12px; }
+  .eyebrow { font-size:8.5px; font-weight:bold; letter-spacing:1px; color:#a01e1e; }
+  .hero h2 { font-size:16.5px; line-height:1.12; font-weight:bold; margin:2px 0 3px 0; }
+  .hero .deck { font-size:11px; font-style:italic; line-height:1.25; margin-bottom:3px; }
+  .hero .body { font-size:10.2px; line-height:1.3; }
+  .label { font-size:8px; letter-spacing:0.4px; font-weight:bold; color:#5a554b; margin-top:3px; }
+
+  /* --- section header bars --- */
+  .bar { background:#141210; color:#f8f4ea; font-size:9px; font-weight:bold; letter-spacing:1.5px; padding:2.5px 6px; display:flex; justify-content:space-between; }
+  .bar span:last-child { color:#d8cfba; letter-spacing:1px; }
+
+  /* --- features --- */
+  .features { display:grid; grid-template-columns:1fr 1fr; column-gap:16px; row-gap:4px; padding:5px 0 6px 0; border-bottom:2.5px solid #141210; }
+  .feat { display:flex; gap:7px; }
+  .feat .num { background:#141210; color:#f8f4ea; font-size:11px; font-weight:bold; width:17px; height:17px; line-height:17px; text-align:center; flex:none; margin-top:1px; }
+  .feat h3 { font-size:12px; line-height:1.15; font-weight:bold; }
+  .feat .d { font-size:10.2px; line-height:1.26; margin-top:1px; }
+  .feat .label { margin-top:1px; }
+
+  /* --- map + briefs --- */
+  .world { display:flex; gap:10px; padding:4px 0 4px 0; flex:1; min-height:0; }
+  .mapbox { width:270px; flex:none; }
+  .mapbox svg { display:block; width:270px; height:176px; background:#efe9d8; border:1px solid #b9b2a2; }
+  .maplegend { font-size:8.3px; line-height:1.4; margin-top:4px; }
+  .maplegend b { color:#a01e1e; }
+  .briefs { flex:1; min-width:0; }
+  .briefcols { display:flex; gap:12px; margin-top:3px; }
+  .bcol { flex:1; }
+  .brief { font-size:8.5px; line-height:1.18; margin-bottom:1.5px; }
+  .brief .bn { font-weight:bold; }
+  .brief .bl { font-family:'Liberation Sans','DejaVu Sans',sans-serif; font-size:7.2px; font-weight:bold; letter-spacing:0.2px; color:#5a554b; }
+
+  /* --- date check + footer --- */
+  .datecheck { border:2px solid #a01e1e; padding:4px 8px 5px 8px; }
+  .datecheck h4 { font-size:9.5px; letter-spacing:1.3px; color:#a01e1e; margin-bottom:1px; }
+  .datecheck p { font-size:8.7px; line-height:1.28; }
+  .datecheck p b { color:#a01e1e; }
+  .footer { text-align:center; font-size:8.3px; letter-spacing:1px; font-weight:bold; padding-top:4px; }
+</style>
+</head>
+<body>
+
+<div class="topmeta sans"><span>VOL. I — NO. 24</span><span>ONE DAY · ONE PAGE · FORTY-EIGHT STORIES</span><span>PRICE: ONE CAREFUL LOOK</span></div>
+
+<h1>THE WORLD IN ONE DAY</h1>
+<div class="dateline sans">TUESDAY <b>24 NOVEMBER 2026</b></div>
+<div class="coverline sans">48 SOURCED STORIES &nbsp;·&nbsp; 9 REGIONS &nbsp;·&nbsp; COVERAGE: MON 23 NOV 00:00 – TUE 24 NOV 00:35 UTC</div>
+
+<div class="stats sans">
+  <div class="stat"><div class="n red">0</div><div class="l">COP31 DEAL — FIRST FAILURE SINCE 2009</div></div>
+  <div class="stat"><div class="n">153</div><div class="l">DRONES FIRED AT UKRAINE OVERNIGHT</div></div>
+  <div class="stat"><div class="n">24</div><div class="l">DEAD CONFIRMED IN CIKANDE FIRE</div></div>
+  <div class="stat"><div class="n">258</div><div class="l">HOUSE SEATS — DEMOCRATS' BIGGEST SINCE 1992</div></div>
+  <div class="stat"><div class="n">~$1tn</div><div class="l">NVIDIA VALUE ADDED AS HUANG RETURNS</div></div>
+  <div class="stat"><div class="n">48</div><div class="l">STORIES · 9 REGIONS · ALL DATED BELOW</div></div>
+</div>
+
+<div class="timeline sans"><b>THE DAY, HOUR BY HOUR (UTC):</b> Sun 22 ~15:00 COP31 ends, no deal · Mon 00:00 153 drones over Ukraine · Mon a.m. Cikande 24 dead, Kyiv 14 · Mon midday Huang back, Nasdaq +3% · Mon p.m. Merkury burns · Tue 00:35 press cut-off</div>
+
+<div class="heroes">
+  <div class="hero">
+    <div class="eyebrow sans">1 &nbsp;·&nbsp; CLIMATE / GLOBAL</div>
+    <h2>COP31 COLLAPSES WITH NO DEAL</h2>
+    <div class="deck">Longest summit ever ends in failure over fossil fuels.</div>
+    <div class="body">The UN climate summit in Antalya ends with no overarching deal — the longest COP on record, the first failure since Copenhagen 2009. The EU, UK, Panama, Vanuatu, the Marshall Islands and the least-developed countries reject the “Antalya Pact” draft: it never mentions fossil fuels. The US stays away for a second year; COP32 goes to Ethiopia.</div>
+    <div class="label sans">CONFIRMED · REUTERS, BBC · SUN 22 – MON 23 NOV</div>
+  </div>
+  <div class="hero">
+    <div class="eyebrow sans">2 &nbsp;·&nbsp; EUROPE / AFRICA</div>
+    <h2>UKRAINE SINKS RUSSIAN CORVETTE OFF LIBYA</h2>
+    <div class="deck">Merkury burns at Benghazi.</div>
+    <div class="body">Ukraine claims the sinking of the Russian Navy corvette <i>Merkury</i> after an explosion and fire at Benghazi port, Libya; President Zelenskyy confirms it. A cargo vessel is also damaged — the war spreads far beyond Ukrainian waters.</div>
+    <div class="label sans">REPORTED · NAVAL NEWS, ZELENSKYY · MON 23 NOV</div>
+  </div>
+  <div class="hero">
+    <div class="eyebrow sans">3 &nbsp;·&nbsp; TECH / US</div>
+    <h2>HUANG RETURNS AS NVIDIA CEO</h2>
+    <div class="deck">Trump step-in ends exile; chips soar.</div>
+    <div class="body">Nvidia reinstates Jensen Huang as chief executive after intervention by President Trump; shares surge, adding about $1tn in value, and tech stocks rally worldwide.</div>
+    <div class="label sans">CONFIRMED · FRANCE 24 · MON 23 NOV</div>
+  </div>
+</div>
+
+<div class="bar sans"><span>THE DAY IN DETAIL</span><span>FEATURES 4–13</span></div>
+<div class="features">
+  <div class="feat"><div class="num sans">4</div><div><h3>IRAN VOWS ‘EVERY MEANS’ VS HORMUZ BLOCKADE</h3><div class="d">Tehran vows every means to counter a US naval blockade, a day after Trump threatens to sink ships that break it.</div><div class="label sans">REPORTED · REUTERS · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">5</div><div><h3>IRAN HITS BAHRAIN A 4TH TIME</h3><div class="d">Fourth Iranian strike on US bases in Bahrain in nine days.</div><div class="label sans">REPORTED · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">6</div><div><h3>NATO VOWS SPACE DEFENCE</h3><div class="d">DIA’s 2026 space-threat report: Russia is building a satellite meant to carry a nuclear weapon. NATO vows space defence; emergency session on Poland.</div><div class="label sans">REPORTED · DIA / NATO · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">7</div><div><h3>RUSSIA KILLS 14 IN KYIV OBLAST</h3><div class="d">Russian barrage kills 14 in Kyiv Oblast; 153 drones fired overnight.</div><div class="label sans">CONFIRMED · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">8</div><div><h3>RUSSIAN SHIP HIT BY DRONE IN BALTIC</h3><div class="d">Russian ship attacked by drone in the Baltic Sea off Finland.</div><div class="label sans">REPORTED · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">9</div><div><h3>CIKANDE FACTORY FIRE: 24 DEAD</h3><div class="d">24 confirmed dead, ~30 still missing after fire razes the PT Fonusa Agung Mulia candy factory (Milkita) in Cikande, Banten; search resumes amid unstable wreckage.</div><div class="label sans">CONFIRMED · REUTERS · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">10</div><div><h3>DEMOCRATS CLINCH HOUSE, 258 SEATS</h3><div class="d">Democrats secure at least 258 of 435 House seats — their largest since 1992 — after Chuck Hubbard beats Virginia Foxx on recount in North Carolina; Foxx concedes Sunday.</div><div class="label sans">CONFIRMED · SUN 22 – MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">11</div><div><h3>INDIA–NEPAL SIGN 8 MOUS</h3><div class="d">Modi hosts Nepal PM Balen Shah; eight MoUs from space to security; ties reset.</div><div class="label sans">CONFIRMED · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">12</div><div><h3>UK TO HOST 2035 WOMEN’S WORLD CUP</h3><div class="d">FIFA Congress confirms the UK as 2035 Women’s World Cup host; the 2031 hosts are also selected.</div><div class="label sans">CONFIRMED · FIFA · MON 23 NOV</div></div></div>
+  <div class="feat"><div class="num sans">13</div><div><h3>MARKETS RALLY ON HUANG</h3><div class="d">Nasdaq futures +3% as tech rallies on Huang’s return; Jakarta’s JCI falls for a fifth straight session, below 5,150.</div><div class="label sans">CONFIRMED · MON 23 NOV</div></div></div>
+</div>
+
+<div class="bar sans"><span>AROUND THE WORLD</span><span>BRIEFS 14–48 · SCHEMATIC MAP — NOT TO SCALE</span></div>
+<div class="world">
+  <div class="mapbox">
+    <svg viewBox="0 0 300 196" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#d9d2bd" stroke="#8f8672" stroke-width="1">
+        <path d="M6,42 L34,24 L66,16 L90,26 L84,42 L98,50 L82,58 L62,64 L48,78 L30,72 L16,60 Z"/>
+        <path d="M96,14 L106,10 L110,18 L100,22 Z"/>
+        <path d="M76,96 L98,88 L114,100 L106,130 L94,142 L84,118 L76,104 Z"/>
+        <path d="M146,42 L166,30 L186,36 L182,50 L164,58 L150,52 Z"/>
+        <path d="M148,64 L170,58 L188,66 L184,92 L172,110 L158,98 L148,80 Z"/>
+        <path d="M188,28 L240,18 L270,32 L264,58 L238,74 L206,68 L190,52 Z"/>
+        <path d="M232,84 L240,80 L244,88 L236,92 Z"/>
+        <path d="M248,90 L256,86 L260,94 L252,98 Z"/>
+        <path d="M220,86 L228,84 L230,90 L222,92 Z"/>
+        <path d="M244,122 L272,116 L282,132 L264,144 L246,136 Z"/>
+      </g>
+      <g fill="#a01e1e" stroke="#f8f4ea" stroke-width="1.2">
+        <circle cx="178" cy="52" r="4.5"/><circle cx="168" cy="60" r="4.5"/><circle cx="180" cy="40" r="4.5"/><circle cx="202" cy="62" r="4.5"/><circle cx="243" cy="92" r="4.5"/>
+      </g>
+      <g font-family="Liberation Sans, sans-serif" font-size="8" font-weight="bold" fill="#141210">
+        <text x="186" y="34">KYIV</text>
+        <text x="140" y="48">ANTALYA</text>
+        <text x="118" y="66">BENGHAZI</text>
+        <text x="208" y="66">BAHRAIN</text>
+        <text x="200" y="104">CIKANDE</text>
+        <text x="8" y="188">NORTH AMERICA</text>
+        <text x="118" y="188">EUROPE · AFRICA · ASIA · OCEANIA</text>
+      </g>
+    </svg>
+    <div class="maplegend sans"><b>● RED DOTS MARK THE DAY’S FIVE FLASHPOINTS</b><br>
+    Antalya — COP31 · Benghazi — <i>Merkury</i> · Kyiv — 153 drones<br>
+    Bahrain — Iran strike · Cikande — factory fire<br>
+    <b>REGIONS:</b> EUROPE 10 · AMERICAS 13 · MIDEAST 6 · ASIA-PACIFIC 9 · SCIENCE 6 · AFRICA 1 · OCEANIA 1 · CLIMATE 1 · GLOBAL 1 = <b>48</b></div>
+  </div>
+  <div class="briefs">
+    <div class="briefcols">
+      <div class="bcol">
+        <div class="brief"><span class="bn">14.</span> Settler arson hits five villages overnight; Eisenkot calls it “Jewish terrorism”. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">15.</span> Oxfam/CEOBS: Gaza’s air, soil and water poisoned for decades by explosive weapons. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">16.</span> Zelenskyy calls Putin “a killer” on CNN; Kryvyi Rih strike kills a boy, 7, and a paramedic. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">17.</span> Britain joins Berlin’s call for a winter truce and a postwar Ukraine force. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">18.</span> Netanyahu: any pause in attacks on Iran would betray Israel’s security. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">19.</span> 700,000+ Russian troops dead, leaked defence ministry records analysed by the NYT. <span class="bl">CLAIM · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">20.</span> Trump’s bids to restart dialogue with Kim Jong Un ignored or rejected (WSJ). <span class="bl">REPORTED · NOV 2026</span></div>
+        <div class="brief"><span class="bn">21.</span> Iran flogs singer Parastoo Ahmadi, 74 lashes, over a hijab-less concert. <span class="bl">REPORTED (LAWYERS) · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">22.</span> Trump orders the US Army to pause lead azide detonation in Iowa. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">23.</span> Appeals court gives Trump a path to erasing his hush money conviction. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">24.</span> Democrats plan 12 debates for the 2028 primary, the first in June. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">25.</span> Waymo suspends driverless taxis from all US freeways after a California ban. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+      </div>
+      <div class="bcol">
+        <div class="brief"><span class="bn">26.</span> Allegheny County certifies midterm results. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">27.</span> India top court grants bail to a Godhra train burning convict on medical grounds. <span class="bl">CONFIRMED · TUE 24 NOV</span></div>
+        <div class="brief"><span class="bn">28.</span> Denmark top court backs the hardline immigration “ghetto law”. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">29.</span> Taliban order women’s names removed from official documents in Balkh, replaced with “Bibi”. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">30.</span> NZ election dead heat: National and Labour both just under 30%; results 27 Nov. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">31.</span> Mexico: 7 gunmen + 4 soldiers killed in the capture of “El Chapo Isidro” in Sinaloa. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">32.</span> EU–Indonesia sign two economic deals; nearly all tariffs scrapped. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">33.</span> Prabowo to nominate VP candidates, state media reports. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">34.</span> BPOM tests Ladaku pepper after Taiwan rejection over pesticide residues. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">35.</span> Skubal agrees record $450M, 9-year Mets deal — largest ever for a pitcher (AP). <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">36.</span> Cowboys 51–30 Titans; Prescott 5 TDs; the NFL’s first-ever 51–30 final (scorigami). <span class="bl">CONFIRMED · SUN 22 NOV</span></div>
+        <div class="brief"><span class="bn">37.</span> 49ers crush Vikings 35–10 in Mexico City; Purdy 3 TDs. <span class="bl">CONFIRMED · SUN 22 NOV</span></div>
+      </div>
+      <div class="bcol">
+        <div class="brief"><span class="bn">38.</span> Jokić’s 202nd triple-double; Denver 151–145 Chicago in OT. <span class="bl">CONFIRMED · SUN 22 NOV</span></div>
+        <div class="brief"><span class="bn">39.</span> Kansas City Current win their first NWSL title, 2–1 over Washington. <span class="bl">CONFIRMED · SUN 22 NOV</span></div>
+        <div class="brief"><span class="bn">40.</span> Voyager 1 makes history one light-day from Earth. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">41.</span> BepiColombo reaches Mercury orbit after 8 years; software issue found on insertion (ESA). <span class="bl">REPORTED · SUN 22–MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">42.</span> Euclid maps 900M galaxies, 15,000 strong lenses — the largest 3D map of the cosmos begun. <span class="bl">REPORTED (ESA) · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">43.</span> Ariane 6 retries today (Tue 24 Nov) with 36 Amazon Leo satellites after a ground scrub. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">44.</span> Webb maps Cassiopeia A dust: the star’s shells merged hours before it exploded. <span class="bl">REPORTED (NASA) · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">45.</span> Beaver Supermoon rises tonight — the first of three supermoons in a row. <span class="bl">CONFIRMED · TUE 24 NOV</span></div>
+        <div class="brief"><span class="bn">46.</span> Manchester: 12,000+ flee a Don Toliver concert after an unknown substance is released. <span class="bl">CONFIRMED · SUN 22 NOV NIGHT</span></div>
+        <div class="brief"><span class="bn">47.</span> Belgium strike strands ~60,000 passengers. <span class="bl">REPORTED · MON 23 NOV</span></div>
+        <div class="brief"><span class="bn">48.</span> India–New Zealand Test ends in a draw. <span class="bl">CONFIRMED · MON 23 NOV</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="datecheck sans">
+  <h4>DATE CHECK — WHAT WE DID NOT COUNT</h4>
+  <p>ICJ Myanmar / Rohingya ruling, Thu 19 Nov · Fiona the hippo dies, Thu 19 Nov · ATP Finals: Alcaraz title, Sun 22 Nov (yesterday’s paper) · Liverpool 4–0 Man Utd, Sun 22 Nov (yesterday’s paper) · France protests, Sat 21 Nov · ICE detains father + daughter in Seattle, Sat 21 Nov · Migrant boat off Senegal — date unverified · Kerch Bridge strike, Mon 17 Nov · Trump–Xi–Putin trilateral at APEC Shenzhen — only “set to hold”, not a done fact. <b>Coverage: Mon 23 Nov 00:00 – Tue 24 Nov 00:35 UTC.</b> Only Tue 24 Nov items: #27 India SC bail · #43 Ariane 6 launch · #45 Beaver Supermoon. Nothing dated 20–22 Nov is shown as 24 Nov news.</p>
+</div>
+
+<div class="footer sans">THE WORLD IN ONE DAY &nbsp;·&nbsp; TUESDAY 24 NOVEMBER 2026 &nbsp;·&nbsp; 48 SOURCED STORIES &nbsp;·&nbsp; 9 REGIONS &nbsp;·&nbsp; SOURCES: REUTERS · BBC · FRANCE 24 · NYT · WSJ · AP · ESA · NASA · FIFA · DIA / NATO</div>
+
+</body>
+</html>
